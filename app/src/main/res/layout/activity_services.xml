@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="LoginModel"
+            type="com.seller.catterpiller.loginmodule.LoginModel" />
+
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgcolorpic"
+        android:id="@+id/layouttop"
+        android:padding="@dimen/dp10"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_backarrow"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    app:tint="@color/textColblack"
+                    android:src="@drawable/ic_left_arrow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/toolbartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:gravity="left"
+                    android:maxEms="10"
+                    android:textSize="@dimen/dpcancelbtn"
+                    android:onClick="textCancel"
+                    android:layout_toRightOf="@+id/image_backarrow"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/raleway_regular"
+                    android:maxLines="1"
+                    android:text="BACK"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textColblack"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:src="@drawable/applogo"
+                app:tint="@color/textColblack"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Think Real Business"
+                android:textSize="@dimen/dplogotextsize"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/raleway_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Press the get service button to \nspeak with a customer service \nspecialist"
+                android:textSize="@dimen/dp12"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/raleway_regular"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp120"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:id="@+id/center_layout"
+            android:orientation="vertical"
+            android:background="#3465a4">
+
+            <ImageView
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/servicebuttondial"
+                android:layout_above="@+id/text_layout"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/center_layout"
+            android:textSize="@dimen/dpedittextsize"
+            android:text="Dial For Service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/text_dialservice"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            ></TextView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/text_dialservice"
+            android:paddingTop="@dimen/dp60"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp10"
+                android:layout_weight="0.95"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.10"
+                android:layout_height="wrap_content"
+                android:text="LOG OUT"
+                android:textSize="@dimen/dpbtnsize"
+                android:paddingTop="@dimen/dp14"
+                android:paddingBottom="@dimen/dp14"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/buttonlinear"
+                android:id="@+id/text_signinaacount"
+                android:textAllCaps="false"
+                android:onClick="OnLoginButton"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/raleway_semibold"></TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorAccent">#B58EF8</color>
+    <color name="purple_500">#FFFFFFFF</color>
+    <color name="purple_700">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorTrans">#99000000</color>
+
+    <color name="darkSkyBlue">#4a90e2</color>
+
+    <color name="gray">#eeeeee</color>
+
+
+
+    <color name="tabIndicatorColor">#FFFFFF</color>
+    <color name="tabSelectedTextColor">#FFFFFF</color>
+    <color name="TextColor">#000000</color>
+    <color name="colorBackground">#f0f0f0</color>
+    <color name="divider">#f2f2f2</color>
+    <color name="textCol">#9E9E9C</color>
+    <color name="viewCol">#9E9E9C</color>
+    <color name="icongreycolor">#707070</color>
+    <color name="textColblack">#010101</color>
+    <color name="textColblue">#013158</color>
+    <color name="ColorDark">#010101</color>
+    <color name="ColorTextGrey">#828282</color>
+    <color name="ColorGrey">#dddddd</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+</resources>

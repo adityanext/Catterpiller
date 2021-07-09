@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:padding="@dimen/dp10"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/image_backarrow"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                app:tint="@color/textColblack"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:visibility="visible"
+                android:textSize="@dimen/dpcancelbtn"
+                android:padding="10dp"
+                android:layout_marginLeft="@dimen/dp10"
+                android:onClick="backbtncancel"
+                android:fontFamily="@font/raleway_semibold"
+                android:id="@+id/tv_HeaderName"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/im_back"
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgcolorpic">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layouttop"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:src="@drawable/applogo"
+                app:tint="@color/textColblack"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Think Real Business"
+                android:textSize="@dimen/dplogotextsize"
+                android:paddingTop="@dimen/dp10"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/raleway_semibold"></TextView>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:text="Balance"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dpbtnsize"
+           />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp40"
+            android:background="@color/viewCol"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Account Balance"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dpedittextsize"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:fontFamily="@font/raleway_bold"
+            android:text="20:25"
+            android:textAlignment="center"
+            android:textColor="@color/textColblack"
+            android:textSize="@dimen/dpbalanceamount"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp40"
+            android:background="@color/viewCol"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Select the amount of payment"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp14"
+            android:visibility="gone"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dp10"
+
+            />
+
+
+
+    </LinearLayout>
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dp60">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text_dialservice"
+        android:paddingTop="@dimen/dp60"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp10"
+            android:layout_weight="0.95"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.10"
+            android:layout_height="wrap_content"
+            android:text="ADD PAYMENT"
+            android:textSize="@dimen/dpbtnsize"
+            android:paddingTop="@dimen/dp14"
+            android:paddingBottom="@dimen/dp14"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/buttonlinear"
+            android:id="@+id/text_signinaacount"
+            android:textAllCaps="false"
+            android:onClick="OnLoginButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_semibold"></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp14"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="CANCEL"
+        android:textAlignment="center"
+        android:textColor="@color/textColblack"
+        android:layout_marginTop="@dimen/dp20"
+        />
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

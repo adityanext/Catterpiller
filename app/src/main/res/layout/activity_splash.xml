@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutbtm"
+        android:gravity="center"
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp140"
+            android:src="@drawable/applogo"
+            app:tint="@color/textColblack"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearsigninscreen"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp20"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Think Real Business"
+            android:textSize="@dimen/dp22"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/raleway_bold"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By creating an account, you agree to our"
+            android:textSize="@dimen/dp14"
+            android:layout_marginTop="@dimen/dp20"
+            android:onClick="troublelogin"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/montserrat_semibold"
+            android:visibility="invisible"
+            ></TextView>
+        <LinearLayout
+            android:onClick="termscondition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10"
+            android:visibility="invisible"
+
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textSize="@dimen/dp14"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#7D7DE3"
+                android:fontFamily="@font/montserrat_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and "
+                android:textSize="@dimen/dp14"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/montserrat_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy policy"
+                android:textSize="@dimen/dp14"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#7D7DE3"
+                android:fontFamily="@font/montserrat_semibold"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

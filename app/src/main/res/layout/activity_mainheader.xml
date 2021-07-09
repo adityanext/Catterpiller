@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+        android:id="@+id/mainheader"
+        android:layout_height="55dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:theme="@style/MyDarkToolbarStyle"
+            />
+
+    <ImageView
+        android:id="@+id/image_backarrow"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        app:tint="@color/textColblack"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:visibility="visible"
+            android:textSize="@dimen/dpcancelbtn"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:fontFamily="@font/raleway_regular"
+            android:id="@+id/tv_HeaderName"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/im_back"
+             />
+
+    </RelativeLayout>
